@@ -21,7 +21,7 @@ function Hero() {
       </div>
 
       <div data-aos={"fade-up"} data-aos-duration={"1500"} className="image-wrapper">
-        <Image width='600' height='600' className='logo' src='/../public/images/logo.png' alt='logo' />
+        <Image width='600' height='600' className='logo' src={require('../public/images/logo.png')} alt='logo' />
       </div>
 
     </div>
