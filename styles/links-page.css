@@ -1,0 +1,102 @@
+.linkspage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 95vh;
+    margin-top: 2rem;
+    margin: 6rem auto;
+    padding: 0 2rem;
+}
+
+.link-card, .link-card-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 205px;
+    width: 455px;
+    padding: 1rem;
+    border: 1px solid #ffffff68;
+    border-radius: 40px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 2.5rem;
+    transition: all 0.3s;
+}
+
+.link-card:hover, .link-card-small:hover {
+    transform: scale(1.05);
+}
+
+.card1 {
+    background-image: url('/images/card1.jpg');
+    background-size: contain;
+    filter: contrast(80%) drop-shadow(4px 6px 8px rgba(0, 0, 0, 0.477));
+    cursor: pointer;
+}
+
+.card2 {
+    background-image: url('/images/card2.jpg');
+    background-size: contain;
+    filter: contrast(80%) drop-shadow(4px 6px 8px rgba(0, 0, 0, 0.477));
+    cursor: pointer;
+}
+
+.card3 {
+    background-image: url('/images/card3.jpg');
+    background-size: contain;
+    filter: contrast(80%) drop-shadow(4px 6px 8px rgba(0, 0, 0, 0.477));
+    cursor: pointer;
+}
+
+.card-contact {
+    background-image: url('/images/card-contact.jpg');
+    filter: contrast(80%) drop-shadow(2px -2px 15px rgb(41, 219, 127));
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+
+.link-card-small {
+    height: 125px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.link-card-title, .link-card-sub {
+    font-size: 1.8rem;
+    margin-top: -1.5rem;
+    margin-left: .5rem;
+    font-weight: 100;
+    background: -webkit-linear-gradient(#e66465, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(4px 6px 8px rgb(0, 0, 0));
+}
+
+.link-card-sub {
+    font-size: 2.8rem;
+    margin-top: -.5rem;
+    margin-left: .2rem;
+    background: -webkit-linear-gradient(#e97979, #e94040);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.link-card-contact {
+    font-size: 2rem;
+    margin-left: 3rem;
+    font-weight: 100;
+    background: -webkit-linear-gradient(#91ce82, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(4px 6px 8px rgb(15, 15, 15));
+}
+

@@ -1,0 +1,55 @@
+.clients-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 95vh;
+    margin-top: 2rem;
+    margin: 6rem auto;
+    padding: 0 2rem;
+}
+
+.clients-container h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100vw;
+    font-size: 2.5rem;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    gap: .75rem;
+    cursor: grab;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+}
+
+
+.client-img {
+    margin: 12px;
+    border-radius: 16px 4px 16px 4px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    background: linear-gradient(#cc154fd2, #e32c2f28);
+    pointer-events: none;
+    border: 1px solid rgba(255, 255, 255, 0.789);
+}
+
+.client-img:hover {
+    transform: scale(1.05);
+}
