@@ -8,7 +8,7 @@ function Links() {
 
       <div className="logo-wrapper">
         <div className="internal-wrapper">
-          <Image className='logo linkslogo' src='/../public/images/logo.png' width='450' height='450' alt='image'></Image>
+          <Image className='logo linkslogo' src={require('../public/images/logo.png')} width='450' height='450' alt='image'></Image>
         </div>
       </div>
 
