@@ -36,9 +36,19 @@
 
 .internal-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.internal-wrapper h3 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: -1rem;
+    background: -webkit-linear-gradient(#e29191, #706e6e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .logo-title {
@@ -203,5 +213,9 @@
     
     .footer-links {
         font-size: 0.5rem;
+    }
+
+    .internal-wrapper h3 {
+        font-size: 1.2rem;
     }
 }
