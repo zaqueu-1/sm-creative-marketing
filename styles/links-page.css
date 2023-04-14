@@ -2,13 +2,53 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    max-width: 100vw;
+    min-width: 325px;
+    margin: 0 auto;
+}
+
+.animated {
+    animation: flow 7s infinite;
+}
+
+@keyframes flow {
+    0% {
+        transform: scale(1.4) rotate(10deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(0deg);
+    }
+    100% {
+        transform: scale(1.4) rotate(10deg);
+    }
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 1200px;
-    height: 95vh;
-    margin-top: 2rem;
-    margin: 6rem auto;
     padding: 0 2rem;
+    margin-bottom: 4rem;
+}
+
+.internal-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-title {
+    font-size: 3.5rem;
+    font-weight: 100;
+    margin-left: .2rem;
+    background: -webkit-linear-gradient(#e66465, #8d3d3d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .link-card, .link-card-small {
@@ -19,7 +59,6 @@
     height: 205px;
     width: 455px;
     padding: 1rem;
-    border: 1px solid #ffffff68;
     border-radius: 40px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -54,14 +93,14 @@
 
 .card-contact {
     background-image: url('/images/card-contact.jpg');
-    filter: contrast(80%) drop-shadow(2px -2px 15px rgb(41, 219, 127));
+    filter: contrast(80%) drop-shadow(2px -2px 15px rgba(41, 219, 127, 0.563));
     margin-top: 1rem;
     cursor: pointer;
 }
 
 
 .link-card-small {
-    height: 125px;
+    height: 105px;
     border-radius: 50px;
     border: none;
     cursor: pointer;
@@ -90,13 +129,79 @@
 }
 
 .link-card-contact {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-left: 3rem;
     font-weight: 100;
-    background: -webkit-linear-gradient(#91ce82, #ffffff);
+    background: -webkit-linear-gradient(#e8eee6, #82c171);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(4px 6px 8px rgb(15, 15, 15));
 }
 
+.footer-links {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(23, 23, 23);
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media only screen and (max-width:530px) {
+
+    .linkslogo {
+        height: 300px;
+        width: 300px;
+   } 
+    
+    .link-card, .link-card-small {
+        height: 150px;
+        width: 100%;
+        min-width: 305px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .card-contact {
+        margin-top: .5rem;
+    }
+    
+    .link-card-small {
+        height: 85px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .card-contact {
+        background-image: url('/images/card-contact.jpg');
+        filter: contrast(80%) drop-shadow(2px -2px 15px rgba(41, 219, 127, 0.563));
+        margin-top: 1rem;
+        cursor: pointer;
+        background-position: 90%;
+        background-size: contain;
+    }
+    
+    .link-card-title, .link-card-sub {
+        font-size: 1.5rem;
+        margin-top: -1.5rem;
+        margin-left: 0;
+    }
+    
+    .link-card-sub {
+        font-size: 1.8rem;
+        margin-top: -.5rem;
+        margin-left: -.1rem;
+    }
+    
+    .link-card-contact {
+        font-size: 1.3rem;
+        margin-left: .5rem;
+    }
+    
+    .footer-links {
+        font-size: 0.5rem;
+    }
+}
