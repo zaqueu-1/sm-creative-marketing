@@ -13,7 +13,7 @@ function Links() {
       </div>
 
       <div className="linkcards-wrapper">
-        <a href='https://smcreativemarketing.com.br/inicio' target='_blank'>
+        <a href='https://smcreativemarketing.com.br/início' target='_blank'>
           <div className="link-card card1">
             <span className='link-card-title'>Acesse nosso</span>
             <span className='link-card-sub'>SITE OFICIAL</span>
