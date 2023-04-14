@@ -27,7 +27,7 @@ function Links() {
           </div>
         </a>
 
-        <a href='www.tiktok.com/@smcreativemkt' target='_blank'>
+        <a href='https://www.tiktok.com/@smcreativemkt' target='_blank'>
           <div className="link-card card3">
             <span className='link-card-title'>Siga-nos no</span>
             <span className='link-card-sub'>TIKTOK</span>
