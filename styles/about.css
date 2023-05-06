@@ -30,16 +30,21 @@
 .people-sub {
     text-align: center;
     font-size: 1rem;
-    color: rgb(234, 185, 255);
+    color: #d7386b;
 }
 
 .team-text-wrapper {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 700px;
     flex-wrap: wrap;
     margin-bottom: 4rem;
+    background-color: #d7386a17;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    padding: .5rem 1rem;
+    border-radius: 6px;
 }
 
 .people-wrapper {
@@ -76,6 +81,7 @@
 .people-img:hover {
     filter: grayscale(0);
     animation: moveUp 2s infinite;
+    border: 2px solid #d7386b;
 }
 
 @keyframes moveUp {
@@ -119,5 +125,13 @@
 
     .people-container h1 {
         font-size: 1.5rem;
+    }
+
+    .people-sub {
+        font-size: .9rem;
+    }
+    
+    .team-text-wrapper {
+        font-size: 1rem;
     }
 }
