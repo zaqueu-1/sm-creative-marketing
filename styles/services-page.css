@@ -1,0 +1,125 @@
+.fullbox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.servicecard-wrapper {
+    transition: all 0.5s ease;
+    overflow-y: scroll;
+    height: 650px;
+    margin-bottom: 2.5rem;
+    padding: 1.2rem;
+    border-radius: 8px;
+    margin-right: 4rem;
+}
+
+.servicecard-wrapper:hover .servicecard {
+    filter: blur(4px);
+    opacity: .7;
+}
+
+.servicecard {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    min-height: 200px;
+    margin: 0 auto 1.2rem auto;
+    padding: 0 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background: rgba(240, 120, 154, 0.204);
+    box-shadow: 0 8px 32px 0 rgba(21, 21, 21, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 16px;
+    border-left: 6px solid rgba(201, 95, 95, 0.504);
+}
+
+.servicecard-wrapper .servicecard:hover {
+    transform: scale(1.05);
+    animation: moveUp 3s infinite;
+    opacity: 1;
+    filter: blur(0px);
+    z-index: 999;
+    border-left: 6px solid rgb(183, 43, 43);
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.servicecard-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-bottom: -.5rem;
+    background: -webkit-linear-gradient(#e66465, #8d3d3d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.servicecard-sub {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: -.25rem;
+    color: #e29191;
+}
+
+.servicecard-list {
+    margin-top: .75rem;
+    background-color: #e291910a;
+    border-radius: 6px;
+    padding: .5rem;
+}
+
+.servicecard-list li {
+    color: #ebbebe;
+    list-style: none;
+}
+
+.servicecard-list li:before {
+    content: "";
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-image: url('/favicon.ico');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pic {
+    width: 45%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(146, 60, 60);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(182, 73, 73);
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.250);
+}

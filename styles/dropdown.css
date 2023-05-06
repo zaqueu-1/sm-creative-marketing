@@ -1,0 +1,121 @@
+.dropdown-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 300px;
+    max-width: 450px;
+    background: linear-gradient(#cc1550 ,#DE2C31);
+    padding: 0 .5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.drop-icon {
+    position: absolute;
+    right: 10px;
+    font-size: 1.5rem;
+}
+
+.hidden {
+    transition: all 0.3s ease;
+    animation: growUp 300ms ease-in-out forwards;
+    transform-origin: top center;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100%;
+    min-width: 300px;
+    max-width: 450px;
+    padding: 0 .5rem;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+@keyframes growUp {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.9);
+        height: 10px;
+        opacity: 0.25;
+    }
+    100% {
+        transform: scaleY(0);
+        height: 0;
+        opacity: 0;
+    }
+}
+
+.explanation {
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100%;
+    min-width: 300px;
+    max-width: 450px;
+    background-color: #3d3d3d92;
+    padding: 0 .5rem;
+    text-align: center;
+    margin-top: -.8rem;
+    transition: all 0.3s ease;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+    border-radius: 0 0 4px 4px;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+.drop-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.drop-subtitle {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #ffffff;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.805));
+    margin: 1rem 0;
+}
+
+@media only screen and (max-width:500px) {
+    .dropdown-container {
+        min-width: 250px;
+        max-width: 400px;
+    }
+    .hidden {
+        min-width: 250px;
+        max-width: 400px;
+    }
+    .explanation {
+        min-width: 250px;
+        max-width: 400px;
+    }
+
+    .drop-title {
+        font-size: 1rem;
+    }
+
+    .drop-subtitle {
+        font-size: 1rem;
+    }
+
+    .drop-icon {
+        font-size: 1.2rem;
+    }
+    
+}

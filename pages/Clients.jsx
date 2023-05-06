@@ -12,22 +12,14 @@ import img7 from '../public/images/c7.png'
 function Clients() {
 
   const imgs = [img1, img2, img3, img4, img5, img6, img7]
-  const carousel = useRef()
-  const [width, setWidth] = useState(0)
-
-  useEffect(() => {
-    setWidth(carousel.current?.scrollWidth - (carousel.current?.offsetWidth+100))
-  }, [])
 
   return (
-    <div className='clients-container'>
-      <h1>Nossos Clientes</h1>
+    <div data-aos={"fade-up"} data-aos-duration={"1200"} className='clients-container'>
+      <h1>NOSSOS CLIENTES</h1>
 
-      <motion.div ref={carousel} className="carousel" whileTap={{cursor: "grabbing"}}>
+      <motion.div className="carousel">
         <motion.div 
           className="carousel-container" 
-          drag='x' 
-          dragConstraints={{right: width, left: -width}}
           initial={{x:100}}
           animate={{x:0}}
           transition={{duration:0.8}}
