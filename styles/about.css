@@ -107,6 +107,10 @@
     color: white;
 }
 
+.team-text-wrapper p {
+    color: white;
+}
+
 .people span {
     font-size: .8rem;
     font-weight: 300;
