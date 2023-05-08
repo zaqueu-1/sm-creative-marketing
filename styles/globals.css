@@ -20,7 +20,6 @@ body {
   z-index: -1;
   filter: blur(6px);
   transform: scale(1.04);
-  overflow-x: hidden;
 }
 
 a {
