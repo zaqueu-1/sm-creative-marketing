@@ -40,7 +40,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className="bg" />
+        <div className="bg animated" />
         <Navbar scroll={scroll} />
         <section ref={heroSection}>
           <Hero />

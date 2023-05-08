@@ -7,7 +7,7 @@
     max-width: 1200px;
     min-width: 250px;
     height: 95vh;
-    margin: 4rem auto;
+    margin: 4rem auto 0 auto;
     padding: 0 2rem;
 }
 
@@ -51,13 +51,13 @@
     object-fit: cover;
     transition: all 0.3s ease;
     pointer-events: none;
-    background-color: rgba(0, 0, 0, 0.187);
     border: 2px solid ;
 }
 
 @media only screen and (max-width:500px) {
     .clients-container {
-        margin-top: 22.5rem;
+        margin-top: -15.5rem;
+
     }
 
     .clients-container h1 {
@@ -66,9 +66,17 @@
 
     .carousel {
         margin: .5rem auto;
+        padding: 0 .5rem;
+    }
+
+    .carousel-container {
+        justify-content: space-evenly;
+        gap: 0rem;
     }
 
     .client-img {
         margin: 5px;
+        height: 105px;
+        width: 105px;
     }
 }

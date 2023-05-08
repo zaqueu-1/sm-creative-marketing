@@ -17,7 +17,7 @@ function Hero() {
         <h2 data-aos={"fade-left"} data-aos-duration={"1800"} className='home-bigtext'>BRILHAR</h2>
         <div data-aos={"fade-up"} data-aos-duration={"1500"} className="controls">
           <button onClick={goTo('https://wa.me/5524998568180')} className="talk-btn">FALE CONOSCO</button>
-          <div data-aos={"zoom-in"} data-aos-duration={"1500"} className="social-media">
+          <div className="social-media">
             <a target='_blank' href='https://www.facebook.com/sabrynasm06?mibextid=LQQJ4d'>
               <CiFacebook className='icon' />
             </a>

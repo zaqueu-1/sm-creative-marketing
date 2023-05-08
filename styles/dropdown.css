@@ -17,6 +17,7 @@
     position: absolute;
     right: 10px;
     font-size: 1.5rem;
+    color: white;
 }
 
 .hidden {
@@ -63,6 +64,7 @@
     animation: growDown 300ms ease-in-out forwards;
     transform-origin: top center;
     border-radius: 0 0 4px 4px;
+    color: white;
 }
 
 @keyframes growDown {

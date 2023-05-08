@@ -29,6 +29,7 @@
 
 .home-text:nth-child(2){
     margin-bottom: -3.5rem;
+    color: white;
 }
 
 .home-bigtext {
@@ -116,6 +117,7 @@
 .icon {
     font-size: 1.8rem;
     transition: all 0.3s ease;
+    color: white;
 }
 
 .icon:hover {
@@ -128,10 +130,11 @@
         flex-direction: column-reverse;
         align-items: center;
         justify-content: flex-start;
+        padding: 2rem;
     }
     
     .home-text {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 300;
         color: white;
         margin: 0 0 -2.5rem 1rem;
@@ -145,7 +148,7 @@
     }
     
     .home-bigtext {
-        font-size: 5rem;
+        font-size: 4rem;
         margin-left: .7rem;
     }
     
@@ -201,7 +204,7 @@
         justify-content: center;
         position: absolute;
         left: 1rem;
-        width: 92%;
+        width: 80%;
         max-width: 450px;
         min-width: 250px;
         height: 4rem;
@@ -211,21 +214,22 @@
         border: none;
         border-radius: 8px;
         color: white;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 300;
         margin-right: 1rem;
+        margin: .25rem 1rem .25rem 0;
         cursor: pointer;
         transition: all 0.3s ease;
     }
     
     .social-media {
         width: 100%;
-        margin-top: 4.25rem;
+        margin-top: 4.55rem;
         margin-left: 2rem;
     }
     
     .icon {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         transition: all 0.3s ease;
     }
     

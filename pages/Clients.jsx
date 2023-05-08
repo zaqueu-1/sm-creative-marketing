@@ -7,11 +7,10 @@ import img3 from '../public/images/c3.png'
 import img4 from '../public/images/c4.png'
 import img5 from '../public/images/c5.png'
 import img6 from '../public/images/c6.png'
-import img7 from '../public/images/c7.png'
 
 function Clients() {
 
-  const imgs = [img1, img2, img3, img4, img5, img6, img7]
+  const imgs = [img1, img2, img3, img4, img5, img6]
 
   return (
     <div data-aos={"fade-up"} data-aos-duration={"1200"} className='clients-container'>
@@ -25,7 +24,7 @@ function Clients() {
           transition={{duration:0.8}}
         >
           {imgs.map((image, index) => (
-          <Image className='client-img' src={image} width='300' height='200' key={index} />
+          <Image className='client-img' src={image} width='250' height='250' key={index} />
           ))}
       </motion.div>
     </motion.div>
