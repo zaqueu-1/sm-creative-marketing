@@ -5,12 +5,12 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Cabin', sans-serif;
+  min-width: 350px;
 }
 
 .bg {
   background-image: url('/images/bg.png');
   background-size:cover;
-  background-repeat: no-repeat;
   position: fixed;
   top: 0;
   left: 0;

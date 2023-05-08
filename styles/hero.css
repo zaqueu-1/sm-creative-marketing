@@ -5,6 +5,7 @@
     justify-content: flex-start;
     position: relative;
     max-width: 1200px;
+    min-width: 350px;
     width: 100%;
     height: 80vh;
     margin: 5rem auto 0 auto;
