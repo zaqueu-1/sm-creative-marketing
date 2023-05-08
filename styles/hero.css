@@ -7,8 +7,8 @@
     max-width: 1200px;
     min-width: 350px;
     width: 100%;
-    height: 80vh;
-    margin: 5rem auto 0 auto;
+    height: 100vh;
+    margin: 2rem auto 0 auto;
 }
 
 .texts {
@@ -131,7 +131,7 @@
         flex-direction: column-reverse;
         align-items: center;
         justify-content: flex-start;
-        padding: 2rem;
+        padding: 2rem ;
     }
     
     .home-text {
@@ -183,7 +183,7 @@
 
     .texts {
         width: 100%;
-        margin: 0 auto;
+        margin: 0 auto 18rem auto;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
