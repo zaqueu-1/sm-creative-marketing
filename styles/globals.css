@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: 'Cabin', sans-serif;
   min-width: 350px;
+  overflow-x: hidden;
 }
 
 .bg {
@@ -19,6 +20,7 @@ body {
   z-index: -1;
   filter: blur(6px);
   transform: scale(1.04);
+  overflow-x: hidden;
 }
 
 a {
