@@ -157,7 +157,7 @@
         position: absolute;
         left: 0;
         top: 2rem;
-        margin: 0 auto;
+        margin: 2rem auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -183,7 +183,7 @@
 
     .texts {
         width: 100%;
-        margin: 0 auto 18rem auto;
+        margin: 1rem auto 18rem auto;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
