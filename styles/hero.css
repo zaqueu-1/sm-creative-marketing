@@ -156,8 +156,9 @@
     .image-wrapper {
         position: absolute;
         left: 0;
-        top: 2rem;
-        margin: 2rem auto;
+        top: 0;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -183,7 +184,7 @@
 
     .texts {
         width: 100%;
-        margin: 1rem auto 18rem auto;
+        margin: 4rem auto 18rem auto;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
