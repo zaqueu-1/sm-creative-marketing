@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { useRef, useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 import Hero from './Hero';
 import Services from './Services';
 import Clients from './Clients';
@@ -57,6 +58,7 @@ export default function Home() {
         <section ref={contactSection}>
           <Contact />
         </section>
+          <Footer scroll={scroll}/>
       </main>
 
     </div>

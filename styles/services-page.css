@@ -13,6 +13,8 @@
     padding: 1.2rem;
     border-radius: 8px;
     margin-right: 4rem;
+    overflow-x: hidden;
+    min-width: 650px;
 }
 
 .servicecard-wrapper:hover .servicecard {
@@ -105,6 +107,8 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 8px;
+    max-width: 600px;
+    min-width: 300px;
 }
 
 ::-webkit-scrollbar {
@@ -122,4 +126,33 @@
 
 ::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.250);
+}
+
+@media only screen and (max-width: 899px) {
+    
+    .servicecard-wrapper {
+        height: 100%;
+        padding: 0 .5rem;
+        border-radius: 8px;
+        margin-right: 0;
+        overflow-x: hidden;
+        min-width: 250px;
+        max-width: 350px;
+        width: 100%;
+    }
+    
+    .servicecard {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        min-height: 200px;
+        margin: 1rem 0;
+        padding: 0 .5rem;
+    }
+    
+
+    .pic {
+        display: none;
+    }
+    
 }

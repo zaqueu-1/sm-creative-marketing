@@ -81,14 +81,14 @@
 
 .drop-title {
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 200;
     color: #fff;
     margin: 1rem 0;
 }
 
 .drop-subtitle {
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 100;
     color: #ffffff;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.805));
     margin: 1rem 0;

@@ -13,7 +13,7 @@ function About() {
   return (
     <div data-aos={"fade-up"} data-aos-duration={"1200"} className='people-container'>
       <h1 data-aos={"fade-up"} data-aos-duration={"1200"}>NOSSO TIME</h1>
-      <p data-aos={"fade-left"} data-aos-duration={"1500"}className='people-sub'>Criamos essa empresa para acender a sua, de forma totalmente criativa!</p>
+      <p data-aos={"fade-left"} data-aos-duration={"1500"} className='people-sub'>Criamos essa empresa para acender a sua, de forma totalmente criativa!</p>
 
       <div className="block-wrapper" style={{display:'flex', justifyContent:'center', alignItems:'center', marginTop:'2rem'}}>
         <motion.div className="people-wrapper">

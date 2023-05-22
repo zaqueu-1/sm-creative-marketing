@@ -104,7 +104,7 @@ function Servicos() {
                     </ul>
                 </div>
             </div>
-            {image && <Image className='pic' />}
+            {image && <Image className='pic' width='600' height='600' src={`/images/0${image}.png`}/>}
         </div>
 
 
