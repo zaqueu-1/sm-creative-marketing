@@ -5,12 +5,12 @@ import { GoPrimitiveDot } from 'react-icons/go'
 function Clients() {
 
   const imgs = [
-    {url:'http://localhost:8000/images/c1.png'},
-    {url:'http://localhost:8000/images/c2.png'},
-    {url:'http://localhost:8000/images/c3.png'},
-    {url:'http://localhost:8000/images/c4.png'},
-    {url:'http://localhost:8000/images/c5.png'},
-    {url:'http://localhost:8000/images/c6.png'},
+    {url:'/images/c1.png'},
+    {url:'/images/c2.png'},
+    {url:'/images/c3.png'},
+    {url:'/images/c4.png'},
+    {url: '/images/c5.png'},
+    {url:'/images/c6.png'},
   ]
 
   const [index, setIndex] = useState(0)
@@ -44,10 +44,10 @@ function Clients() {
 
   return (
     <div data-aos={"fade-up"} data-aos-duration={"1200"} className='clients-container'>
-      <h1>NOSSOS CLIENTES</h1>
-      <p className='contact-sub'>Um pouco do que já construímos</p>
+      <h1 data-aos={"fade-left"} data-aos-duration={"1500"}>NOSSOS CLIENTES</h1>
+      <p data-aos={"fade-right"} data-aos-duration={"1800"}className='contact-sub'>Um pouco do que já construímos</p>
 
-      <div className='outer'>
+      <div data-aos={"fade-up"} data-aos-duration={"2100"} className='outer'>
         <div className='inner' style={{backgroundImage:`url(${imgs[index].url})`, width:'100%', height:'100%' }} />
         <div onClick={previous} className='left-arrow'><BsFillArrowLeftCircleFill /></div>
         <div onClick={next} className='right-arrow'><BsFillArrowRightCircleFill /></div>
