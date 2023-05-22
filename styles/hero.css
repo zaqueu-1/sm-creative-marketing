@@ -184,7 +184,7 @@
 
     .texts {
         width: 100%;
-        margin: 4rem auto 18rem auto;
+        margin: 0rem auto 14rem auto;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
