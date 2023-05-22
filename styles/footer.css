@@ -68,5 +68,9 @@ li:hover {
     .footer-text {
         display: none;
     }
+
+    .footer-divider {
+        display: none;
+    }
     
 }

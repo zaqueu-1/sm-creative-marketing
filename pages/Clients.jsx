@@ -1,33 +1,62 @@
 import React, { useState, useEffect, useRef } from 'react'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import img1 from '../public/images/c1.png'
-import img2 from '../public/images/c2.png'
-import img3 from '../public/images/c3.png'
-import img4 from '../public/images/c4.png'
-import img5 from '../public/images/c5.png'
-import img6 from '../public/images/c6.png'
+import { BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from 'react-icons/bs'
+import { GoPrimitiveDot } from 'react-icons/go'
 
 function Clients() {
 
-  const imgs = [img1, img2, img3, img4, img5, img6]
+  const imgs = [
+    {url:'http://localhost:8000/images/c1.png'},
+    {url:'http://localhost:8000/images/c2.png'},
+    {url:'http://localhost:8000/images/c3.png'},
+    {url:'http://localhost:8000/images/c4.png'},
+    {url:'http://localhost:8000/images/c5.png'},
+    {url:'http://localhost:8000/images/c6.png'},
+  ]
+
+  const [index, setIndex] = useState(0)
+  const intervalRef = useRef(null)
+
+  const previous = () => {
+    const isFirst = index === 0
+    const newIndex = (isFirst ? imgs.length-1 : index-1)
+    setIndex(newIndex)
+  }
+
+  const next = () => {
+    const isLast = index === imgs.length-1
+    const newIndex = (isLast ? 0 : index+1)
+    setIndex(newIndex)
+  }
+
+  const goTo = (dotindex) => {
+    setIndex(dotindex)
+  }
+
+  useEffect(() => {
+    intervalRef.current = setInterval(() => {
+      next()
+    }, 2000)
+
+    return () => {
+      clearInterval(intervalRef.current)
+    };
+  }, [index]);
 
   return (
     <div data-aos={"fade-up"} data-aos-duration={"1200"} className='clients-container'>
       <h1>NOSSOS CLIENTES</h1>
+      <p className='contact-sub'>Um pouco do que já construímos</p>
 
-      <motion.div className="carousel">
-        <motion.div 
-          className="carousel-container" 
-          initial={{x:100}}
-          animate={{x:0}}
-          transition={{duration:0.8}}
-        >
-          {imgs.map((image, index) => (
-          <Image className='client-img' src={image} width='250' height='250' key={index} />
+      <div className='outer'>
+        <div className='inner' style={{backgroundImage:`url(${imgs[index].url})`, width:'100%', height:'100%' }} />
+        <div onClick={previous} className='left-arrow'><BsFillArrowLeftCircleFill /></div>
+        <div onClick={next} className='right-arrow'><BsFillArrowRightCircleFill /></div>
+        <div className='selector'>
+          {imgs.map((img, dotIndex) => (
+            <div onClick={(e) => goTo(dotIndex)} key={dotIndex}><GoPrimitiveDot className='dot'/></div>
           ))}
-      </motion.div>
-    </motion.div>
+        </div>
+      </div>
     </div>
   )
 }
