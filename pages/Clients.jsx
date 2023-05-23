@@ -11,6 +11,7 @@ function Clients() {
     {url:'/images/c4.png'},
     {url: '/images/c5.png'},
     {url:'/images/c6.png'},
+    {url:'/images/c7.png'},
   ]
 
   const [index, setIndex] = useState(0)
@@ -35,7 +36,7 @@ function Clients() {
   useEffect(() => {
     intervalRef.current = setInterval(() => {
       next()
-    }, 2000)
+    }, 2500)
 
     return () => {
       clearInterval(intervalRef.current)

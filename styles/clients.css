@@ -41,7 +41,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
     background-color: rgba(0, 0, 0, 0.22);
 }
 
@@ -91,7 +91,7 @@
 }
 
 .left-arrow:hover, .right-arrow:hover {
-    color: #910d37;
+    color: white;
 }
 
 
