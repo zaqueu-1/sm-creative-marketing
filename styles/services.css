@@ -32,7 +32,7 @@
     justify-content: center;
     width: 100%;
     max-width: 800px;
-    margin: 2rem auto;
+    margin: 1rem auto;
     text-align: center;
     font-size: 1.2rem;
     font-weight: 100;
@@ -63,9 +63,33 @@
     justify-content: center;
     width: 100%;
     max-width: 1200px;
-    margin: 2rem auto;
+    margin: 1rem auto;
     padding: 0 2rem;
     gap: .75rem;
+}
+
+.services-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-btn {
+    margin: 1rem 0 2rem 0;
+    padding: 1rem;
+    border-radius: 6px;
+    color: white;
+    background-color:#CC1550;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.services-btn:hover {
+    background-color:#9e113e;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 500px) {
@@ -116,5 +140,11 @@
         margin: 2rem auto;
         padding: 0 2rem;
         gap: .75rem;
+    }
+
+    .services-btn {
+        font-size: .9rem;
+        text-align: center;
+        padding: .5rem;
     }
 }

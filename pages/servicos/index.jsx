@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function Servicos() {
 
@@ -107,12 +108,11 @@ function Servicos() {
             {image && <Image className='pic' width='600' height='600' src={`/images/0${image}.png`}/>}
         </div>
 
+        <Link className='return-btn' href='/'>Voltar</Link>
 
-
-
-      <div className="footer-links">
-        <h2>SM Creative Marketing - Todos os direitos reservados</h2>
-      </div>
+        <div className="footer-container-s">
+            <p className='footer-s'>SM Creative Marketing - Todos os direitos reservados</p>
+        </div>
     </div>
   )
 }

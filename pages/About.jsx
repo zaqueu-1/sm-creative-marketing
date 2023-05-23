@@ -1,21 +1,22 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import img1 from '../public/images/p1.png'
+import img1 from '../public/images/p1.jpeg'
 import img2 from '../public/images/p2.jpg'
 import img3 from '../public/images/p3.png'
 import img4 from '../public/images/p4.jpg'
+import img5 from '../public/images/p5.jpg'
 
 function About() {
 
-  const imgs = [img1, img2, img3, img4]
+  const imgs = [img1, img2, img3, img4, img5]
 
   return (
     <div data-aos={"fade-up"} data-aos-duration={"1200"} className='people-container'>
       <h1 data-aos={"fade-up"} data-aos-duration={"1200"}>NOSSO TIME</h1>
       <p data-aos={"fade-left"} data-aos-duration={"1500"} className='people-sub'>Criamos essa empresa para acender a sua, de forma totalmente criativa!</p>
 
-      <div className="block-wrapper" style={{display:'flex', justifyContent:'center', alignItems:'center', marginTop:'2rem'}}>
+      <div className="block-wrapper" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
         <motion.div className="people-wrapper">
               <div className="people">
                 <Image className='people-img' src={img1} width='200' height='200' />
@@ -39,6 +40,12 @@ function About() {
                 <Image className='people-img' src={img4} width='200' height='200' />
                 <p>Eduardo Zaqueu</p>
                 <span>Desenvolvedor</span>
+              </div>
+
+              <div className="people">
+                <Image className='people-img' src={img5} width='200' height='200' />
+                <p>Sualis martins</p>
+                <span>Social Media</span>
               </div>
           </motion.div>
 

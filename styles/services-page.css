@@ -3,6 +3,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     width: 100vw;
+    padding: 0 2rem;
 }
 
 .servicecard-wrapper {
@@ -10,9 +11,9 @@
     overflow-y: scroll;
     height: 650px;
     margin-bottom: 2.5rem;
-    padding: 1.2rem;
+    padding: 1rem 0;
     border-radius: 8px;
-    margin-right: 4rem;
+    margin-right: 2rem;
     overflow-x: hidden;
     min-width: 650px;
 }
@@ -128,6 +129,37 @@
     background: rgba(0, 0, 0, 0.250);
 }
 
+.return-btn {
+    margin: 0 0 2rem 0;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(182, 73, 73);
+    transition: all 0.3s ease-in-out;
+}
+
+.return-btn:hover {
+    background-color: rgb(146, 60, 60);
+}
+
+.footer-container-s {
+    height: 80px;
+    background-color: #222;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-s {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 1rem;
+    color: #444;
+}
+
 @media only screen and (max-width: 899px) {
     
     .servicecard-wrapper {
@@ -136,23 +168,43 @@
         border-radius: 8px;
         margin-right: 0;
         overflow-x: hidden;
-        min-width: 250px;
-        max-width: 350px;
-        width: 100%;
+        min-width: 330px;
+        max-width: 450px;
+        width: 95%;
+    }
+
+    .fullbox {
+        padding: 0 0;
     }
     
     .servicecard {
         display: flex;
         flex-direction: column;
         width: 300px;
-        min-height: 200px;
-        margin: 1rem 0;
-        padding: 0 .5rem;
+        padding: .75rem .5rem;
+        margin: .75rem 0;
+    }
+
+    .servicecard-title {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: -.75rem;
+    }
+
+    .servicecard-sub {
+        font-size: .9rem;
+        font-weight: 200;
+        margin-bottom: -.25rem;
+        color: #e29191;
     }
     
 
     .pic {
         display: none;
+    }
+
+    .footer-s {
+        font-size: .8rem;
     }
     
 }
