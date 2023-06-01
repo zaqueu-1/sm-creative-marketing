@@ -175,6 +175,8 @@
 
     .fullbox {
         padding: 0 0;
+        flex-direction: column-reverse;
+        align-items: center;
     }
     
     .servicecard {
@@ -198,9 +200,16 @@
         color: #e29191;
     }
     
-
     .pic {
-        display: none;
+        width: 45%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 8px;
+        max-width: 600px;
+        min-width: 300px;
+        display: block;
     }
 
     .footer-s {

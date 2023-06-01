@@ -56,16 +56,30 @@
     font-weight: 200;
 }
 
+.servicesBg {
+    width: 100vw;
+    height: 50vw;
+    background-image: url('/images/ccc2.png');
+    background-repeat: no-repeat;
+    background-position: 90% 10%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(0.85) grayscale(0.2);
+
+}
+
 .cards {
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 100%;
     max-width: 1200px;
-    margin: 1rem auto;
-    padding: 0 2rem;
+    margin: 1rem 0;
+    padding: 3.5rem 0;
     gap: .75rem;
+    z-index: 1;
 }
 
 .services-header {
@@ -73,6 +87,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .services-btn {
@@ -147,4 +162,18 @@
         text-align: center;
         padding: .5rem;
     }
+
+    .servicesBg {
+        width: 100vw;
+        height: 250px;
+        background-image: url('/images/ccc2.png');
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+        background-size: 70%;
+        position: initial;
+        z-index: -1;
+        filter: brightness(0.85) grayscale(0.2);
+    
+    }
+
 }
