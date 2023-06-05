@@ -43,7 +43,7 @@
 
 .internal-wrapper h3 {
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 200;
     margin-top: -1rem;
     background: -webkit-linear-gradient(#e29191, #706e6e);
     background-clip: text;
@@ -53,7 +53,7 @@
 
 .logo-title {
     font-size: 3.5rem;
-    font-weight: 100;
+    font-weight: 200;
     margin-left: .2rem;
     background: -webkit-linear-gradient(#e66465, #8d3d3d);
     background-clip: text;
@@ -85,11 +85,13 @@
     background-size: contain;
     filter: contrast(80%) drop-shadow(4px 6px 8px rgba(0, 0, 0, 0.477));
     cursor: pointer;
+    background-position: 90% 0;
 }
 
 .card2 {
     background-image: url('/images/card2.jpg');
     background-size: contain;
+    background-position: 100% 0;
     filter: contrast(80%) drop-shadow(4px 6px 8px rgba(0, 0, 0, 0.477));
     cursor: pointer;
 }
@@ -103,7 +105,7 @@
 
 .card-contact {
     background-image: url('/images/card-contact.jpg');
-    filter: contrast(80%) drop-shadow(2px -2px 15px rgba(41, 219, 127, 0.563));
+    filter: contrast(100%) brightness(0.8);
     margin-top: 1rem;
     cursor: pointer;
 }
@@ -120,7 +122,7 @@
     font-size: 1.8rem;
     margin-top: -1.5rem;
     margin-left: .5rem;
-    font-weight: 100;
+    font-weight: 200;
     background: -webkit-linear-gradient(#e66465, #ffffff);
     background-clip: text;
     -webkit-background-clip: text;
@@ -141,12 +143,12 @@
 .link-card-contact {
     font-size: 1.8rem;
     margin-left: 3rem;
-    font-weight: 100;
+    font-weight: 200;
     background: -webkit-linear-gradient(#e8eee6, #82c171);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(4px 6px 8px rgb(15, 15, 15));
+    filter: drop-shadow(2px 2px 1px rgb(15, 15, 15));
 }
 
 .footer-links {
@@ -171,11 +173,7 @@
         height: 150px;
         width: 100%;
         min-width: 305px;
-        margin-bottom: 1.5rem;
-    }
-    
-    .card-contact {
-        margin-top: .5rem;
+        margin-bottom: 1.2rem;
     }
     
     .link-card-small {
@@ -187,7 +185,6 @@
 
     .card-contact {
         background-image: url('/images/card-contact.jpg');
-        filter: contrast(80%) drop-shadow(2px -2px 15px rgba(41, 219, 127, 0.563));
         margin-top: 1rem;
         cursor: pointer;
         background-position: 90%;
@@ -195,7 +192,7 @@
     }
     
     .link-card-title, .link-card-sub {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         margin-top: -1.5rem;
         margin-left: 0;
     }
@@ -217,5 +214,9 @@
 
     .internal-wrapper h3 {
         font-size: 1.2rem;
+    }
+
+    .card2 {
+        background-position: 550% 50%;
     }
 }

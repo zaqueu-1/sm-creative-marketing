@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Head from 'next/head'
+import Link from 'next/link'
 
 function Links() {
   return (
@@ -23,19 +24,19 @@ function Links() {
         </div>
 
         <div className="linkcards-wrapper">
-          <a href='https://smcreativemarketing.com.br/início' target='_blank'>
+          <Link href='https://smcreativemarketing.com.br'>
             <div className="link-card card1">
               <span className='link-card-title'>Acesse nosso</span>
               <span className='link-card-sub'>SITE OFICIAL</span>
             </div>
-          </a>
+          </Link>
 
-          <a href='https://smcreativemarketing.com.br/sm' target='_blank'>
+          <Link href='https://smcreativemarketing.com.br/servicos'>
             <div className="link-card card2">
               <span className='link-card-title'>Conheça nossos</span>
               <span className='link-card-sub'>SERVIÇOS</span>
             </div>
-          </a>
+          </Link>
 
           <a href='https://www.tiktok.com/@smcreativemkt' target='_blank'>
             <div className="link-card card3">
