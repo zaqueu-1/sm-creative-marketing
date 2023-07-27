@@ -1,7 +1,6 @@
 import React from 'react'
 import Dropdown from './components/Dropdown/Dropdown'
 import Link from 'next/link'
-import Image from 'next/image'
 
 function Services() {
   return (

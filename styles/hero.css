@@ -1,55 +1,79 @@
-.hero-container {
+/* .hero-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    /* position: relative; */
-    max-width: 1200px;
-    min-width: 350px;
-    width: 100vw;
     height: 100vh;
-    margin: 2rem auto 0 auto;
+    margin-top: 3rem;
+    gap: 3.5rem;
+} */
+
+/* .hero-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 2rem;
+}
+
+.hero-container .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-container .content .texts {
+    width: 50%;
+}
+
+.hero-container .content .image-wrapper {
+    width: 50%;
 }
 
 .texts {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    /* flex: 1 1 40rem; */
+    padding-top: 10.5rem;
 }
 
 .home-text {
     font-size: 3rem;
     font-weight: 100;
     color: white;
-    margin: 0 0 -3rem 4.5rem;
-    padding: 0;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.home-text:nth-child(2){
-    margin-bottom: -3.5rem;
-    color: white;
+    margin: 0;
+    line-height: 0.85;
 }
 
 .home-bigtext {
     font-size: 5.7rem;
     font-weight: 200;
     color: #CC1550;
-    margin: 0 0 0 4.2rem;
-    padding: 0;
-    text-align: center;
-    margin-top: 2rem;
+    margin: 0;
+    margin-left: -0.4rem;
+    line-height: 0.85;
 }
 
 .image-wrapper {
-    position: absolute;
-    right: 0;
+    flex: 1 1 20rem; 
 }
 
 .logo {
     animation: pulse 6.5s infinite;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero-container .content .texts {
+        width: 35%;
+    }
+
+    .hero-container .content {
+        width: 95%;
+    }    
 }
 
 @keyframes pulse {
@@ -77,6 +101,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 7px 0px;
     width: 22rem;
     height: 4rem;
     background: linear-gradient(to right, #cc1550, #e22e2f);
@@ -126,33 +151,37 @@
 }
 
 @media only screen and (max-width: 500px) {
+
     .hero-container {
+        width: 100%;
+    }
+
+    .hero-container .content {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+    }
+
+    .hero-container .content .texts {
+        padding: 0;
         width: 100%;
     }
     
     .home-text {
         font-size: 2rem;
         color: white;
-        margin: 0 0 -2.5rem 1rem;
-        padding: 0;
-        text-align: center;
-        margin-top: 2rem;
-    }
-    
-    .home-text:nth-child(2){
-        margin-bottom: -3.25rem;
+        text-align: left;
+        margin: 0;
     }
     
     .home-bigtext {
         font-size: 4rem;
-        margin-left: .7rem;
+        line-height: 0.85;
     }
     
     .image-wrapper {
         width: 100%;
+        margin-top: -6rem;
         /* position: absolute; */
         /* left: 0;
         top: 0; */
@@ -181,14 +210,12 @@
         }
     }
 
-    .texts {
+    /* .texts {
         width: 100%;
-        margin: 0rem auto 14rem auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+        align-items: flex-start;
+    } */
     
     .controls {
         display: flex;
@@ -201,6 +228,7 @@
     
     .talk-btn {
         height: 4rem;
+        width: 80%;
         background: linear-gradient(to right, #cc1550, #e22e2f);
         background-size: 400% 400%;
         animation: bg 2s ease infinite;
@@ -215,8 +243,7 @@
     
     .social-media {
         width: 100%;
-        margin-top: 4.55rem;
-        margin-left: 2rem;
+        justify-content: flex-start;
     }
     
     .icon {
