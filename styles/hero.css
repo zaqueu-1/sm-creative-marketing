@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    position: relative;
+    /* position: relative; */
     max-width: 1200px;
     min-width: 350px;
     width: 100vw;
@@ -87,7 +87,6 @@
     color: white;
     font-size: 1.2rem;
     font-weight: 100;
-    margin-right: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -130,9 +129,8 @@
     .hero-container {
         flex-direction: column-reverse;
         align-items: center;
-        justify-content: flex-start;
-        padding: 2rem 0;
-        margin-bottom: -8rem;
+        justify-content: center;
+        width: 100%;
     }
     
     .home-text {
@@ -154,11 +152,12 @@
     }
     
     .image-wrapper {
-        position: absolute;
-        left: 0;
-        top: 0;
-        margin-top: 4rem;
-        margin-bottom: 4rem;
+        width: 100%;
+        /* position: absolute; */
+        /* left: 0;
+        top: 0; */
+        /* margin-top: 4rem;
+        margin-bottom: 4rem; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -187,7 +186,7 @@
         margin: 0rem auto 14rem auto;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
     }
     
@@ -201,14 +200,6 @@
     }
     
     .talk-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        left: 1rem;
-        width: 80%;
-        max-width: 450px;
-        min-width: 250px;
         height: 4rem;
         background: linear-gradient(to right, #cc1550, #e22e2f);
         background-size: 400% 400%;
@@ -218,8 +209,6 @@
         color: white;
         font-size: 1.1rem;
         font-weight: 300;
-        margin-right: 1rem;
-        margin: .25rem 1rem .25rem 0;
         cursor: pointer;
         transition: all 0.3s ease;
     }
