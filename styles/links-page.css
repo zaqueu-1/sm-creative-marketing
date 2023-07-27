@@ -74,6 +74,7 @@
     cursor: pointer;
     margin-bottom: 2.5rem;
     transition: all 0.3s;
+    
 }
 
 .link-card:hover, .link-card-small:hover {
@@ -86,6 +87,7 @@
     filter: contrast(80%) drop-shadow(4px 6px 8px rgba(0, 0, 0, 0.477));
     cursor: pointer;
     background-position: 90% 0;
+
 }
 
 .card2 {
@@ -100,6 +102,13 @@
     background-image: url('/images/card3.jpg');
     background-size: contain;
     filter: contrast(80%) drop-shadow(4px 6px 8px rgba(0, 0, 0, 0.477));
+    cursor: pointer;
+}
+
+.card4 {
+    background-image: url('/images/card4.jpg');
+    background-size: contain;
+    filter: contrast(90%) drop-shadow(4px 6px 8px rgba(0, 0, 0, 0.477));
     cursor: pointer;
 }
 
@@ -122,7 +131,19 @@
     font-size: 1.8rem;
     margin-top: -1.5rem;
     margin-left: .5rem;
-    font-weight: 200;
+    font-weight: 500;
+    background: -webkit-linear-gradient(#e66465, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(4px 6px 8px rgb(0, 0, 0));
+}
+
+.ebook-title, .ebook-sub {
+    font-size: 1.4rem;
+    margin-top: -1.5rem;
+    margin-left: .5rem;
+    font-weight: 500;
     background: -webkit-linear-gradient(#e66465, #ffffff);
     background-clip: text;
     -webkit-background-clip: text;
@@ -132,6 +153,16 @@
 
 .link-card-sub {
     font-size: 2.8rem;
+    margin-top: -.5rem;
+    margin-left: .2rem;
+    background: -webkit-linear-gradient(#e97979, #e94040);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ebook-sub {
+    font-size: 2.2rem;
     margin-top: -.5rem;
     margin-left: .2rem;
     background: -webkit-linear-gradient(#e97979, #e94040);
@@ -196,10 +227,22 @@
         margin-top: -1.5rem;
         margin-left: 0;
     }
+
+    .ebook-title, .ebook-sub {
+        font-size: 1.2rem;
+        margin-top: -1.5rem;
+        margin-left: 0;
+    }
     
     .link-card-sub {
         font-size: 1.8rem;
         margin-top: -.5rem;
+        margin-left: -.1rem;
+    }
+
+    .ebook-sub {
+        font-size: 1.5rem;
+        margin-top: -.2rem;
         margin-left: -.1rem;
     }
     
