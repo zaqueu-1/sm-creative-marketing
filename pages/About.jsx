@@ -2,17 +2,14 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import img1 from '../public/images/p1.jpeg'
-import img2 from '../public/images/p2.jpg'
 import img3 from '../public/images/p3.png'
-import img4 from '../public/images/p4.jpg'
 import img5 from '../public/images/p5.jpg'
+import img6 from '../public/images/p6.jpeg'
 
 function About() {
 
-  const imgs = [img1, img2, img3, img4, img5]
-
   return (
-    <div data-aos={"fade-up"} data-aos-duration={"1200"} className='people-container'>
+    <div data-aos={"fade-up"} data-aos-duration={"1000"} className='people-container'>
       <h1 data-aos={"fade-up"} data-aos-duration={"1200"}>NOSSO TIME</h1>
       <p data-aos={"fade-left"} data-aos-duration={"1500"} className='people-sub'>Criamos essa empresa para acender a sua, de forma totalmente criativa!</p>
 
@@ -25,20 +22,14 @@ function About() {
               </div>
 
               <div className="people">
-                <Image className='people-img' src={img2} width='200' height='200' />
-                <p>Camila Dias</p>
-                <span>Editora Audiovisual</span>
-              </div>
-
-              <div className="people">
                 <Image className='people-img' src={img3} width='200' height='200' />
                 <p>João Victor</p>
                 <span>Designer</span>
               </div>
 
               <div className="people">
-                <Image className='people-img' src={img4} width='200' height='200' />
-                <p>Eduardo Zaqueu</p>
+                <Image className='people-img' src={img6} width='200' height='200' />
+                <p>Gabriel Dias</p>
                 <span>Desenvolvedor</span>
               </div>
 
