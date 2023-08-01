@@ -1,0 +1,43 @@
+.slider {
+  display: flex;
+  overflow: hidden;
+  width: 300px; /* Ajuste o tamanho do slider conforme necessário */
+}
+
+.slide {
+  flex: 0 0 300px; /* Ajuste o tamanho dos slides conforme necessário */
+  background-color: #f0f0f0;
+  padding: 16px;
+  margin-right: 16px;
+  opacity: 0.5;
+  transition: transform 1s, opacity 1s;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  33.33% {
+    transform: translateX(-100%);
+  }
+  66.67% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+.slider:hover .slide {
+  animation: slideAnimation 12s linear infinite;
+}
+
+.slide:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.slide:nth-child(3) {
+  animation-delay: 8s;
+}
+
+/* Adicione mais estilos conforme o número de slides aumenta */

@@ -5,7 +5,8 @@ import Head from 'next/head'
 
 function Servicos() {
 
-    const [image, setImage] = useState(1)
+    const [image, setImage] = useState(1);
+
 
     const handleMouseOver = (num) => {
         setImage(num)
@@ -14,8 +15,6 @@ function Servicos() {
     const handleMouseOut = (num) => {
         setImage(num)
     }
-
-
 
   return (
     <>
@@ -37,7 +36,7 @@ function Servicos() {
 
             <div className="fullbox">
                 <div className="servicecard-wrapper">
-                    <div className="servicecard" onMouseOver={(e) => handleMouseOver(1)} onMouseOut={(e) => handleMouseOut(1)}>
+                    <div className="servicecard"  onTouchStart={(e) => handleMouseOver(1)} onTouchEnd={(e) => handleMouseOut(1)} onMouseOver={(e) => handleMouseOver(1)} onMouseOut={(e) => handleMouseOut(1)}>
                         <h2 className='servicecard-title'>Gerenciamento de Redes Sociais</h2>
                         <h3 className='servicecard-sub'>Uma equipe especializada para criar e pôr em prática estratégias criativas que irão elevar seu posicionamento, profissionalismo e autoridade nas redes sociais. </h3>
                         <ul className='servicecard-list'>
@@ -51,7 +50,7 @@ function Servicos() {
                         </ul>
                     </div>
 
-                    <div className="servicecard" onMouseOver={(e) => handleMouseOver(2)} onMouseOut={(e) => handleMouseOut(2)}>
+                    <div className="servicecard" onTouchStart={(e) => handleMouseOver(2)} onTouchEnd={(e) => handleMouseOut(2)} onMouseOver={(e) => handleMouseOver(2)} onMouseOut={(e) => handleMouseOut(2)}>
                         <h2 className='servicecard-title'>Design Gráfico</h2>
                         <h3 className='servicecard-sub'>Tenha peças únicas e personalizadas para profissionalizar seu negócio e se destacar on e offline . </h3>
                         <ul className='servicecard-list'>
@@ -62,7 +61,7 @@ function Servicos() {
                         </ul>
                     </div>
 
-                    <div className="servicecard" onMouseOver={(e) => handleMouseOver(3)} onMouseOut={(e) => handleMouseOut(3)} >
+                    <div className="servicecard" onTouchStart={(e) => handleMouseOver(3)} onTouchEnd={(e) => handleMouseOut(3)}  onMouseOver={(e) => handleMouseOver(3)} onMouseOut={(e) => handleMouseOut(3)} >
                         <h2 className='servicecard-title'>Start SM</h2>
                         <h3 className='servicecard-sub'>A melhor forma de começar a se profissionalizar com economia. </h3>
                         <h3 className='servicecard-sub'>Criado para novos e pequenos empreendedores, O Start SM foi feito para te ajudar a mostrar de forma simples e direta seus valores, benefícios e diferenciais. Tudo isso através da estética de um perfil bem organizado. </h3>
@@ -77,7 +76,7 @@ function Servicos() {
                         </ul>
                     </div>
 
-                    <div className="servicecard" onMouseOver={(e) => handleMouseOver(4)} onMouseOut={(e) => handleMouseOut(4)}>
+                    <div className="servicecard"  onTouchStart={(e) => handleMouseOver(4)} onTouchEnd={(e) => handleMouseOut(4)} onMouseOver={(e) => handleMouseOver(4)} onMouseOut={(e) => handleMouseOut(4)}>
                         <h2 className='servicecard-title'>Criação de Sites</h2>
                         <h3 className='servicecard-sub'>Tenha profissionalismo, aumente sua credibilidade e venda com um negócio online 24h por dia. </h3>
                         <ul className='servicecard-list'>
@@ -88,7 +87,7 @@ function Servicos() {
                         </ul>
                     </div>
 
-                    <div className="servicecard" onMouseOver={(e) => handleMouseOver(5)} onMouseOut={(e) => handleMouseOut(5)}>
+                    <div className="servicecard"  onTouchStart={(e) => handleMouseOver(5)} onTouchEnd={(e) => handleMouseOut(5)} onMouseOver={(e) => handleMouseOver(5)} onMouseOut={(e) => handleMouseOut(5)}>
                         <h2 className='servicecard-title'>Identidade Visual</h2>
                         <h3 className='servicecard-sub'>Seja reconhecido de forma única! Crie uma marca que leve sua personalidade e valores. </h3>
                         <ul className='servicecard-list'>
@@ -100,7 +99,7 @@ function Servicos() {
                         </ul>
                     </div>
 
-                    <div className="servicecard" onMouseOver={(e) => handleMouseOver(6)} onMouseOut={(e) => handleMouseOut(6)}>
+                    <div className="servicecard" onTouchStart={(e) => handleMouseOver(6)} onTouchEnd={(e) => handleMouseOut(6)} onMouseOver={(e) => handleMouseOver(6)} onMouseOut={(e) => handleMouseOut(6)}>
                         <h2 className='servicecard-title'>Tráfego Pago</h2>
                         <h3 className='servicecard-sub'>Cresça, tenha visibilidade e alcance um público qualificado para o seu negócio. </h3>
                         <ul className='servicecard-list'>

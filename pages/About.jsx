@@ -16,25 +16,25 @@ function About() {
       <div className="block-wrapper" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
         <motion.div className="people-wrapper">
               <div className="people">
-                <Image className='people-img' src={img1} width='200' height='200' />
+                <Image alt='people 1' className='people-img' src={img1} width='200' height='200' />
                 <p>Sabryna Michaelli</p>
                 <span>CEO e Social Media</span>
               </div>
 
               <div className="people">
-                <Image className='people-img' src={img3} width='200' height='200' />
+                <Image  alt='people 2' className='people-img' src={img3} width='200' height='200' />
                 <p>João Victor</p>
                 <span>Designer</span>
               </div>
 
               <div className="people">
-                <Image className='people-img' src={img6} width='200' height='200' />
+                <Image  alt='people 3' className='people-img' src={img6} width='200' height='200' />
                 <p>Gabriel Dias</p>
                 <span>Desenvolvedor</span>
               </div>
 
               <div className="people">
-                <Image className='people-img' src={img5} width='200' height='200' />
+                <Image  alt='people 4' className='people-img' src={img5} width='200' height='200' />
                 <p>Sualis martins</p>
                 <span>Social Media</span>
               </div>

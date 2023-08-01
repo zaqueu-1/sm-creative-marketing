@@ -61,10 +61,6 @@ li:hover {
 }
 
 @media only screen and (max-width: 899px) {
-    ul {
-        display: none;
-    }
-
     .footer-text {
         display: none;
     }
